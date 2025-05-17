@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Dinamico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Proyecto Final</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Selecciona una opción para ver más detalles</p>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="menuContainer">
+        </div>
+  
+        <div id="contentContainer" class="content-container mt-12 bg-white rounded-xl shadow-xl p-8 max-w-4xl mx-auto">
+            <button id="backButton" class="back-button mb-6 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
+                <i class="fas fa-arrow-left mr-2"></i> Volver al menú
+            </button>
+            
+            <div id="dynamicContent" class="space-y-6">
+            </div>
+            
+            <div class="mt-8 text-center">
+                <a id="externalLink" href="#" target="_blank" class="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                    <i class="fas fa-external-link-alt mr-2"></i> Visitar sitio externo
+                </a>
+            </div>
+        </div>
+        
+        <footer class="mt-16 text-center text-gray-600">
+            <p>© 2025 Menú Dinámico. Todos los derechos reservados. Ronald A. Hache - 100576071</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
